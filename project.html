@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC:Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="tittle">Famous Programming Language Survey Form</h1>
+        <p id="description">Thank you for taking the time to visit the survey form</p>
+    </header>
+    <div class="container">
+        
+        <form action="" id="survey-form" class="input-class">
+            <label for="name-label">Name</label><br>
+            <input class="input-text" type="text"  id="name-label" placeholder="Enter your name"><br>
+            <br>
+            <label for="email-label">Email</label><br>
+            <input  class="input-text" type="email" id="email-label" placeholder="Enter your Email"><br>
+            <br>
+            <label for="number-label">Age (optional)</label><br>
+            <input  class="input-text" type="number"  id="number-label" placeholder="Age" value="20" max="100" min="5"><br>
+            <br>
+            <label for="role">Which programming language you like very most?</label><br>
+            <select  class="input-text" name="role" id="dropdown" >
+                <option value="" disabled selected>Programming language</option>
+                <option value="student">C</option>
+                <option value="Full Time Job">C++</option>
+                <option value="full time learner">Java</option>
+                <option value="Prefer not to say">Python</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="recommendations">Would you recommend this programming language to your friend?</label><br>
+            <input type="radio"  id="definitely" >
+            <label for="definitely">Definitely</label><br>
+            <input type="radio"  id="May be" >
+            <label for="May be">May be</label><br>
+            <input type="radio"  id="Not sure">
+            <label for="Not sure">Not sure</label><br>
+            <br>
+            <label for="feature">Why do you like this programming language?</label><br>
+            <select  class="input-text" name="feature" id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="challenges">Easy syntax</option>
+                <option value="projets">Better Time complexity</option>
+                <option value="community">Inbuilt Library contained</option>
+                <option value="open source">Other</option>
+
+            </select>
+        <br>
+            <br>
+        <label for="improvements">In what paltform you will use your favourite programming language? (Check all that apply)</label><br>
+            <input type="checkbox" id="Open source program" value="Open source program">
+            <label for="Open source program">Open source program</label><br>
+            <input type="checkbox" id="Competitive Programming"  value="Competitive Programming">
+            <label for="Competitive Programming">Competitive Programming</label><br>
+            <input type="checkbox" id="Game Development"  value="Game Development">
+            <label for="Game Development">Game Development</label><br>
+            <input type="checkbox" id="Machine Learning" value="Machine Learning">
+            <label for="Machine Learning">Machine Learning</label><br>
+            <input type="checkbox" id="Web Development" value="Web Development">
+            <label for="Web Development">Web Development</label><br>
+            <input type="checkbox" id="Android Development" value="Android Development">
+            <label for="Android Development">Android Development</label><br>
+            <input type="checkbox" id="AR/VR" value="AR/VR">
+            <label for="AR/VR">AR/VR</label><br>
+            <input type="checkbox" id="Additional Purpose" value="Additional Purpose">
+            <label for="Additional Purpose">Additional Purpose</label><br>
+
+            <br><br>
+
+            <label for="comments">Any comments or suggestions?</label><br>
+            <textarea  class="input-text" name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+            <br><br>
+
+            <button id="submit" class="input-text">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
