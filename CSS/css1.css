@@ -1,0 +1,69 @@
+p,a{
+    color: chartreuse;
+}
+
+li{
+    list-style-type:square ;
+}
+/*  Class selectors*/
+.special{
+    color: orange;
+     font-weight: bold;
+}
+/* to use some tag with same class*/
+span.special,li.special{
+    color: violet;
+    font-weight: bold;
+}
+
+/*To select some tag in tag then use Descendent combinator*/
+li em{
+    color:royalblue;
+}
+
+/* Adjacent combinator*/
+
+h1+p{
+    font-size: bold;
+}
+
+/* Pseudo class selector*/
+a:hover{
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+/*select all body*/
+body h1+p .special{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+#heading{
+    color: brown;
+    background-color: black;
+}
+/* id selector*/
+p#one{
+    color:crimson;
+}
+
+/*Attribute selector*/
+
+li[class]{
+    font-size: 100%;
+}
+/*to  select specific class by attribute selector*/
+li[class="a"]{
+    color: royalblue;
+}
+
+li[class~="a"]{
+    color: red;
+}
+/*Everything selector*/
+ *{
+    background-color:darkgoldenrod;
+
+ }
