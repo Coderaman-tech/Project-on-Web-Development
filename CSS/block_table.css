@@ -1,0 +1,37 @@
+div{
+    padding: 18px;
+    border: 10px solid black ;
+    margin: 20px;
+}
+
+.box1,.box2{
+    height: 100px;
+    width: 100px;
+}
+/*Margin has no color*/
+.box1{
+    margin: 30px;
+    background-color: aquamarine;
+}
+.box2{
+    margin: 30px;
+    background-color: blueviolet;
+}
+.wrapper{
+    background-color: brown;
+}
+table,tr,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+}
+th{
+    background-color: coral;
+}
+td{
+    background-color: cornflowerblue;
+}
+tfoot{
+    background-color: darkkhaki;
+}
