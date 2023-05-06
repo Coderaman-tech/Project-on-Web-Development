@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background-color: red;
+    height: 700px;
+    /* width: 900px; */
+
+    /* defining that our  ui is adjust as grid property */
+
+    /* display: grid; work as a block there is another method name display: inline-grid; which take whole space of inline no space between row and column*/
+    display: grid;
+
+    /* here we define how many rows and column required to divide grid */
+    /* 3 row of 133 px */
+    /* grid-template-rows: 133px 133px 133px;   
+    grid-template-columns: 133px 133px 133px; */
+
+ /* same as 1fr 1fr 1fr (3row with 1fr each),1fr means use one fraction of entire width it helps to use full space */
+    /* grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);  */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 143px 1fr 43px;
+    /* distance between rows and columns */ 
+    row-gap: 12px;
+    column-gap: 12px;
+ /* it tell about where we we about to insert or display grid items from start,center or end from horizontally */
+    /* justify-items: start; */
+
+    /* and for vertically use align-items: ; */
+    /* align-items: center; */
+
+     /* for both horizontal and vertical  */
+    place-items: center;
+}
+
+.item{
+    background-color: aqua;
+    height: 122px;
+    width: 122px;
+}
+
+/* now we are going to know how to  a grid cell use two grid cell space */
+.item1{
+    /* grid-column-start: 1; */
+    /* another way and it is effective */
+    grid-column: 1/span 3;
+    grid-column-end: 4;
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+
+.item2{
+   /* just like horizontally justify-items which is applied in container if we want to do this for specific cell then use justify-self: ; */
+    /* justify-self:center ; */
+
+  /* and for vertically */
+    /* align-self: center; */
+
+     /* for both horizontal and vertical  */
+
+    /* place-self: center; */
+
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: black;
+    width: 100vw;
+}
