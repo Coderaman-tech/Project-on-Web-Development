@@ -1,0 +1,47 @@
+.fcontainer{
+
+    /* initialise flex property to block */
+    display: flex;
+    border:2px solid grey;
+    height: 40vh;
+    /* to arrange flex items in column (horizontal by default) */
+    /* flex-direction: column; */
+
+    /* item start from end horizontally(default) */
+    /* flex-direction: row-reverse; ( col-reverse) */
+
+    /* make all item in center  horizontally*/
+    /* justify-content: center; ( start-> flex-start end->flex-end) */
+
+     /* make all item in center  vertically*/
+    /* align-items: center; ( start-> flex-start end->flex-end) */
+
+    /* great thing for responsiveness */
+    flex-wrap: wrap;
+}
+
+.fitem{
+    background-color: rgb(51, 113, 194);
+    border:2px solid black;
+    margin: 12px;
+    width: 122px;
+    height: 122px;
+}
+
+
+.item1{
+    /* those item whose order is more comes to an end */
+    order:3;
+    /* to increase length (by default 1)*/
+    /* flex-grow: 3; */
+
+    /* those item who has more shrink first that shrink when size is reduced(responsive time) */
+    /* flex-shrink: 3; */
+
+    /* to make one item center */
+    align-self: center;
+}
+
+.item2{
+    order: 5;
+}
